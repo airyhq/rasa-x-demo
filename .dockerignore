@@ -1,0 +1,6 @@
+venv
+
+# These will be provided by Rasax
+models
+data
+credentials.yml
