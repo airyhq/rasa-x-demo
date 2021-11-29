@@ -1,5 +1,4 @@
 import logging
-import logging
 import time
 import uuid
 from typing import Text, List, Optional

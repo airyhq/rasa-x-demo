@@ -91,7 +91,7 @@ class AiryInput(InputChannel):
 
     def _is_text_message(self, req: Request) -> bool:
         # See https://docs.airy.co/glossary#fields
-        return req.json["type"] == "message" and "text" in req.json["payload"]["message"]["content"]
+        return req.json["type"] == "message.created" and "text" in req.json["payload"]["message"]["content"]
 
     def blueprint(
             self, on_new_message: Callable[[UserMessage], Awaitable[None]]
